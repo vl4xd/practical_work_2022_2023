@@ -1,0 +1,40 @@
+﻿@model medical_family_card.Models.Allergy
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Редактирование</h1>
+
+<h4>Аллергия</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AllergyId" />
+            <div class="form-group">
+                <label asp-for="AllergyName" class="control-label">Название аллергии</label>
+                <input asp-for="AllergyName" class="form-control" />
+                <span asp-validation-for="AllergyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AllergyComment" class="control-label">Комментарий к аллергии</label>
+                <input asp-for="AllergyComment" class="form-control" />
+                <span asp-validation-for="AllergyComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-id="@User.Identity.Name">Вернуться к списку аллергий</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<medical_family_card.Models.Friend>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    <a asp-action="Create">Добавить знакомого</a>
+</p>
+
+<h1>Мои знакомые</h1>
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="Index" asp-route-id=@User.Identity.Name>Мои знакомые</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="RequestTo">Входящие заявки</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="RequestFrom">Исходящие заявки</a>
+        </li>
+    </ul>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Имя пользователя
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.ToUsr)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @if (item.FromUsr.UsrId == Convert.ToInt32(User.Identity.Name))
+            {
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromUsr.UsrName)
+                </td>
+            }
+            else
+            {
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToUsr.UsrName)
+                </td>
+            }
+            <td>
+                @*<a asp-action="Edit" asp-route-id="@item.FriendId">Edit</a> |*@
+                <a asp-action="Details" asp-route-id="@item.FriendId">Подробности</a> |
+                <a asp-action="Delete" asp-route-id="@item.FriendId">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

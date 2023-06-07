@@ -1,0 +1,40 @@
+﻿@model medical_family_card.Models.Ht
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Редактирование</h1>
+
+<h4>Рост</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="HtId" />
+            <div class="form-group">
+                <label asp-for="HtValue" class="control-label">Значение роста</label>
+                <input asp-for="HtValue" class="form-control" />
+                <span asp-validation-for="HtValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HtDate" class="control-label">Дата измерения</label>
+                <input asp-for="HtDate" class="form-control" />
+                <span asp-validation-for="HtDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-id="@User.Identity.Name">Вернуться к списку роста</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

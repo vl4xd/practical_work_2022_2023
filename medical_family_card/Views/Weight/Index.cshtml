@@ -1,0 +1,57 @@
+﻿@model IEnumerable<medical_family_card.Models.Wt>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if ((int)ViewData["currentUserId"] == Convert.ToInt32(User.Identity.Name))
+{
+    <h1>Список значений веса</h1>
+    <p>
+        <a asp-action="Create">Добавить запись о весе</a>
+    </p>
+}
+else
+{
+    <a asp-controller="Home" asp-action="Index" asp-route-id=@ViewData["currentUserId"]>Вернуться к меню знакомого</a>
+    <h1>Cписок значений роста пользователя @ViewData["UsrName"]</h1>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Значение веса
+            </th>
+            <th>
+                Дата измерения
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.WtValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WtDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usr.UsrId)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.WtId">Подробности</a>
+                @if (item.UsrId == Convert.ToInt32(User.Identity.Name))
+                {
+                    <a>|</a>
+                    <a asp-action="Edit" asp-route-id="@item.WtId">Редактировать</a>
+                    <a>|</a>
+                    <a asp-action="Delete" asp-route-id="@item.WtId">Удалить</a>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

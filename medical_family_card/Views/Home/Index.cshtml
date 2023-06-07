@@ -1,0 +1,39 @@
+﻿@model int
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+            @if (Model == Convert.ToInt32(User.Identity.Name))
+            {
+                <h1>Ваше главное меню</h1>
+            }
+            else
+            {
+                <a asp-controller="Friends" asp-action="Index" asp-route-id=@Model>Вернуться к списку знакомых</a>
+                <h1>Главное меню знакомого</h1>
+            }
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="UsrInfoes" asp-action="Index" asp-route-id=@Model>Моя карта</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Allergies" asp-action="Index" asp-route-id=@Model>Аллергии</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Weight" asp-action="Index" asp-route-id=@Model>Вес</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Height" asp-action="Index" asp-route-id=@Model>Рост</a>
+            </li>
+            @if (Model == Convert.ToInt64(User.Identity.Name))
+            {
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="Index" asp-route-id=@Model>Знакомые</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

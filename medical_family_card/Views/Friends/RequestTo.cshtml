@@ -1,0 +1,61 @@
+﻿@model IEnumerable<medical_family_card.Models.Friend>
+
+@{
+    ViewData["Title"] = "RequestTo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Входящие заявки</h1>
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="Index" asp-route-id=@User.Identity.Name>Мои знакомые</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="RequestTo">Входящие заявки</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Friends" asp-action="RequestFrom">Исходящие заявки</a>
+        </li>
+    </ul>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Имя пользователя
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.FriendType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FromUsr)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ToUsr)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.FriendType.FriendTypeId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.FromUsr.UsrName)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.ToUsr.UsrId)
+            </td>*@
+            <td>
+                <a asp-action="FriendAccept" asp-route-id="@item.FriendId">Принять</a> |
+                <a asp-action="Delete" asp-route-id="@item.FriendId">Отклонить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

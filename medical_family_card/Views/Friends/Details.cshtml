@@ -1,0 +1,37 @@
+﻿@model medical_family_card.Models.Friend
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Friend</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FriendType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FriendType.FriendTypeId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FromUsr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FromUsr.UsrId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ToUsr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ToUsr.UsrId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.FriendId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

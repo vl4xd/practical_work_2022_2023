@@ -1,0 +1,66 @@
+﻿@model IEnumerable<medical_family_card.Models.Visit>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VisitName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VisitStartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VisitEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VisitCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VisitComment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usr)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitStartDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VisitComment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usr.UsrId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.VisitId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.VisitId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.VisitId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

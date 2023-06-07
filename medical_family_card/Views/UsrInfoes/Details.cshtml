@@ -1,0 +1,76 @@
+﻿@model medical_family_card.Models.UsrInfo
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>UsrInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Фотография
+        </dt>
+        <dd class="col-sm-10">
+            <img width="200" height="200" src=@Url.Action("GetImage", "UsrInfoes", new {id = Model.UsrId}) />
+        </dd>
+
+        <dt class = "col-sm-2">
+            Имя
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsrInfoFirstName)
+        </dd>
+        <dt class = "col-sm-2">
+            Фамилия
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsrInfoLastName)
+        </dd>
+        <dt class = "col-sm-2">
+            Отчество
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsrInfoMiddleName)
+        </dd>
+        <dt class = "col-sm-2">
+            Дата рождения
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UsrInfoBirthday)
+        </dd>
+        <dt class = "col-sm-2">
+            Группа крови
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Blood.BloodName)
+        </dd>
+        <dt class = "col-sm-2">
+            Гендер
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender.GenderName)
+        </dd>
+        <dt class = "col-sm-2">
+            Резус фактор
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RhesusFactor.RhesusFactorName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if (Model.UsrId == Convert.ToInt32(User.Identity.Name))
+    {
+        //<a asp-action="Edit" asp-route-id="@Model?.UsrId">Изменить</a>
+        //<a>|</a>
+        <a asp-action="Delete" asp-route-id="@Model?.UsrId">Удалить</a>
+    }
+    else
+    {
+        <a asp-controller="Home" asp-action="Index" asp-route-id=@Model.UsrId>Вернуться к меню знакомого</a>
+    }
+</div>

@@ -1,0 +1,60 @@
+﻿@model medical_family_card.Models.Visit
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Visit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VisitId" />
+            <div class="form-group">
+                <label asp-for="UsrId" class="control-label"></label>
+                <select asp-for="UsrId" class="form-control" asp-items="ViewBag.UsrId"></select>
+                <span asp-validation-for="UsrId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitName" class="control-label"></label>
+                <input asp-for="VisitName" class="form-control" />
+                <span asp-validation-for="VisitName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitStartDate" class="control-label"></label>
+                <input asp-for="VisitStartDate" class="form-control" />
+                <span asp-validation-for="VisitStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitEndDate" class="control-label"></label>
+                <input asp-for="VisitEndDate" class="form-control" />
+                <span asp-validation-for="VisitEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitCost" class="control-label"></label>
+                <input asp-for="VisitCost" class="form-control" />
+                <span asp-validation-for="VisitCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VisitComment" class="control-label"></label>
+                <input asp-for="VisitComment" class="form-control" />
+                <span asp-validation-for="VisitComment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,40 @@
+﻿@model medical_family_card.Models.Wt
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Редактирование</h1>
+
+<h4>Вес</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="WtId" />
+            <div class="form-group">
+                <label asp-for="WtValue" class="control-label">Значение веса</label>
+                <input asp-for="WtValue" class="form-control" />
+                <span asp-validation-for="WtValue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WtDate" class="control-label">Дата измерения</label>
+                <input asp-for="WtDate" class="form-control" />
+                <span asp-validation-for="WtDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-id="@User.Identity.Name">Вернуться к списку веса</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

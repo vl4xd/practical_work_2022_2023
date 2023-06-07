@@ -1,0 +1,22 @@
+﻿@model int
+@{
+    ViewData["Title"] = "IsNotExist";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<hr />
+<div class="row">
+    @{
+        
+        if (ViewBag.MainUser)
+        {
+            <h1>@ViewBag.UserName карта еще не создана</h1>
+            <a asp-action="Create" asp-route-id=@Model>Создать карту</a>
+        }
+        else
+        {
+            <a asp-controller="Home" asp-action="Index" asp-route-id=@Model>Вернуться к меню знакомого</a>
+            <h1>@ViewBag.UserName карта еще не создана</h1>
+        }
+    }
+</div>

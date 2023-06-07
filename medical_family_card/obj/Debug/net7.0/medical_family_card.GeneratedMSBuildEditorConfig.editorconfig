@@ -1,0 +1,181 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = medical_family_card
+build_property.RootNamespace = medical_family_card
+build_property.ProjectDir = C:\Users\vlaxd\OneDrive\Документы\practical_work_medical_family_card\medical_family_card\medical_family_card\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\vlaxd\OneDrive\Документы\practical_work_medical_family_card\medical_family_card\medical_family_card
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Allergies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsZXJnaWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Allergies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsZXJnaWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Allergies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsZXJnaWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Allergies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsZXJnaWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Allergies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxsZXJnaWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/RequestFrom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xSZXF1ZXN0RnJvbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Friends/RequestTo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRnJpZW5kc1xSZXF1ZXN0VG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Height/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVpZ2h0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Height/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVpZ2h0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Height/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVpZ2h0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Height/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVpZ2h0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Height/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVpZ2h0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/UsrInfoes/IsNotExist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNySW5mb2VzXElzTm90RXhpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Visits/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Visits/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Visits/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Visits/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Visits/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Weight/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VpZ2h0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Weight/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VpZ2h0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Weight/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VpZ2h0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Weight/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VpZ2h0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Weight/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2VpZ2h0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Shared/_AccountLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BY2NvdW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-rb6170hfr2
+
+[C:/Users/vlaxd/OneDrive/Документы/practical_work_medical_family_card/medical_family_card/medical_family_card/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2tx4xvon4o
